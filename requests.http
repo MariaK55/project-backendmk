@@ -1,0 +1,52 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Pepe",
+    "age": "45",
+    "email": "pepe@gmail.com"
+}
+
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Juan",
+    "age": "35",
+    "email": "juan@gmail.com"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/books HTTP/1.1
+
+
+###
+GET http://localhost:9000/api/books/629e195330f4981ceadbe0b5 HTTP/1.1 
+
+###
+PUT http://localhost:9000/api/users/629d3cfbb0660135308bb612 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Juan Martínez",
+    "age": "35",
+    "email": "juanma@gmail.com"
+}
+
+###
+DELETE http://localhost:9000/api/users/629d3cfbb0660135308bb612 HTTP/1.1
+
+###
+POST http://localhost:9000/api/books HTTP/1.1
+Content-Type: application/json
+
+{
+    "titulo":"juan book",
+    "autor": "629ddcdc55a27c83d87f60e8",
+    "precio": "24.90"
+}
